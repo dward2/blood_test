@@ -25,8 +25,10 @@ def TOT_analysis(TOT_level):
         return 'High'
 
 def cholesterol_analysis():
+    print("\n")
     print("Cholesterol Analysis")
     DLinput = input("Enter test result: ")
+    print("\n")
     test_info = DLinput.split("=")
     if test_info[0].strip() == "HDL":
         print(HDL_analysis(int(test_info[1])))
@@ -34,7 +36,8 @@ def cholesterol_analysis():
         print(LDL_analysis(int(test_info[1])))
     elif test_info[0].strip() == "TOT":
         print(TOT_analysis(int(test_info[1])))
-        
+    print("\n")
+    
 def new_feature():
     pass
 
